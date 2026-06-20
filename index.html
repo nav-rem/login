@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            background:#f2f2f2;
+            font-family:Georgia, serif;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        .container{
+            width:350px;
+            margin:20px auto;
+            border:1px solid gray;
+            padding:20px;
+            background:#fff;
+        }
+
+        input{
+            width:100%;
+            margin-bottom:12px;
+            padding:5px;
+            box-sizing:border-box;
+        }
+
+        .skills input,
+        .gender input{
+            width:auto;
+        }
+
+        button{
+            padding:8px 15px;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<div class="container">
+<form id="myForm">
+
+    <label>Username:</label>
+    <input type="text" name="username">
+
+    <label>Password:</label>
+    <input type="password" name="password">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone">
+
+    <label>Website URL:</label>
+    <input type="url" name="website">
+
+    <label>Age:</label>
+    <input type="number" name="age">
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob">
+
+    <label>Search:</label>
+    <input type="search" name="search">
+
+    <label>Upload File:</label>
+    <input type="file" name="file">
+
+    <label>Choose Color:</label>
+    <input type="color" name="color">
+
+    <label>Range:</label>
+    <input type="range" name="range">
+
+    <div class="gender">
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </div>
+
+    <div class="skills">
+        <p>Skills:</p>
+        <input type="checkbox" name="skills"> HTML
+        <input type="checkbox" name="skills"> CSS
+        <input type="checkbox" name="skills"> Python
+    </div>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+</div>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Form Submitted Successfully!");
+});
+</script>
+
+</body>
+</html>
