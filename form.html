@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+
+<form onsubmit="return loginUser()">
+
+    <label>Username</label>
+    <input type="email" id="username" placeholder="abc@gmail.com" required>
+
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Abcd_1" required>
+
+    <button type="submit">Login</button>
+
+</form>
+
+<script>
+function loginUser() {
+    // Any email and any password will be accepted
+    window.location.href = "index.html";
+    return false;
+}
+</script>
+
+</body>
+</html>
